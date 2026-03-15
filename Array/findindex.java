@@ -1,0 +1,24 @@
+import java.util.*;
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+public class findindex {
+    public static int[] findindex(int arr[], int target){
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]+arr[j]==target){
+                    return new int[]{i,j};
+                }
+            }
+        }
+        return new int[]{-1,-1};
+
+    }
+    public static void main(String[] args) {
+        int arr[]={2,3,5,7,8,9};
+        int target=11;
+        int result[]=findindex(arr, target);
+        System.out.println(result[0]+  " "+ result[1]);
+        
+    }
+    
+}
