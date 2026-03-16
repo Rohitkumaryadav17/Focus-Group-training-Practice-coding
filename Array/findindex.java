@@ -1,6 +1,4 @@
 import java.util.*;
-
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 public class findindex {
     public static int[] findindex(int arr[], int target){
         for(int i=0;i<arr.length;i++){
