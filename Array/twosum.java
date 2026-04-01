@@ -7,7 +7,7 @@ public class twosum {
                 }
             }
         }
-        System.out.println();
+       return -1;
     }
     public static void main(String[] args) {
         int arr[]={3,5,8,9,2,4};
