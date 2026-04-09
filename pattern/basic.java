@@ -66,6 +66,31 @@ public class basic {
 
         }
     }
+    public static void invertedhalfpyramid(){
+        for(int i=1;i<=4;i++){
+            for(int j=1;j<=4-i+1;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+    }
+    public static void halfinvertedrotatedpyramid(int n){
+        // outer loop - line n 
+        for(int i=1;i<=n;i++){
+            /// print space 
+            for(int j=1;j<n-i;j++){
+                System.out.print(" ");
+            }
+
+            //  print star 
+            for(int j=1;j<=i;j++){
+            System.out.print("*");
+            }
+            System.out.println();
+
+        }
+    }
 
     public static void main(String[] args) {
    
@@ -73,7 +98,8 @@ public class basic {
         // invertedstar();
         // halfpyramid();
         // characterpattern();
-        hollowrectangle(4, 5);
+        // hollowrectangle(4, 5);
+      halfinvertedrotatedpyramid(4);
 
 
         
