@@ -36,7 +36,7 @@ public class basic {
     }
     public static void characterpattern(){
         int n=4;
-        int ch='A';
+        char ch='A';
         // outer loop 
         for(int i=1;i<=n;i++){
             for(int chars=1;chars<=i;chars++){
@@ -46,13 +46,35 @@ public class basic {
             System.out.println();
         }
     }
+    public static void hollowrectangle( int totRows, int totcols){
+        // outer loop =4  using matrix method
+        for(int i=1;i<=totRows;i++){
+            // inner loop 
+            for(int j=1;j<=totcols; j++){
+              // cell - (i,j)
+              if(i==1 || i== totRows || j== 1 || j== totcols){
+                // boundary cellls 
+                System.out.print("*");
+              }
+              else{
+                System.err.print( " ");
+              }
+
+            }
+            System.out.println();
+              
+
+        }
+    }
 
     public static void main(String[] args) {
    
         // starpattern();
         // invertedstar();
         // halfpyramid();
-        characterpattern();
+        // characterpattern();
+        hollowrectangle(4, 5);
+
 
         
     }
