@@ -37,7 +37,7 @@ public class average{
         // avg();
         // swap();
         // System.out.println(Product(5, 8));
-         System.out.println(fact(8));
+        //  System.out.println(fact(8));
         
     }
 }
